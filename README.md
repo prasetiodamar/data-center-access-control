@@ -1,4 +1,5 @@
-# Data Center Access Control System 🚪🔐
+# Data Center Access Control System 
+
 
 Advanced face recognition-based access control system for data center security with real-time monitoring and analytics.
 
