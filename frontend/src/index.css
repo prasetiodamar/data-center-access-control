@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold cursor-pointer transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-primary-dark text-white hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 text-primary border-2 border-gray-300 hover:border-primary hover:bg-gray-100;
+  }
+
+  .btn-danger {
+    @apply bg-error text-white hover:opacity-90;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1 text-sm;
+  }
+
+  .btn:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  .form-input {
+    @apply w-full px-3 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all;
+  }
+
+  .form-label {
+    @apply block mb-2 font-semibold text-gray-700 text-sm;
+  }
+
+  .form-group {
+    @apply mb-4;
+  }
+
+  .badge {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase;
+  }
+
+  .badge-success {
+    @apply bg-success/20 text-success border border-success/30;
+  }
+
+  .badge-error {
+    @apply bg-error/20 text-error border border-error/30;
+  }
+
+  .badge-warning {
+    @apply bg-warning/20 text-warning border border-warning/30;
+  }
+
+  .badge-unknown {
+    @apply bg-info/20 text-info border border-info/30;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6;
+  }
+
+  .table {
+    @apply w-full border-collapse;
+  }
+
+  .table thead {
+    @apply bg-gradient-to-r from-primary to-primary-dark text-white;
+  }
+
+  .table th {
+    @apply px-4 py-3 text-left font-semibold text-sm uppercase tracking-wider;
+  }
+
+  .table td {
+    @apply px-4 py-3 border-b border-gray-200;
+  }
+
+  .table tbody tr {
+    @apply hover:bg-gray-50 transition-colors;
+  }
+
+  .modal-backdrop {
+    @apply fixed inset-0 bg-black/50 flex items-center justify-center z-50;
+  }
+
+  .modal {
+    @apply bg-white rounded-xl shadow-2xl max-w-lg w-11/12 z-50;
+  }
+
+  .spinner {
+    @apply border-4 border-gray-200 border-t-primary rounded-full w-12 h-12 animate-spin;
+  }
+}
